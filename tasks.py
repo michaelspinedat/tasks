@@ -60,5 +60,24 @@ def task8(height):
             print("*", end = " ")
         print()
 
-task8(7)
+# pyramid
+def task9(height):
+    for i in range(1, height + 1):
+        for j in range(0, height - i):
+            print(" ", end = "")
+        for k in range(height - i, height):
+            print("*", end = " ")
+        print()
+    
+# inverted pyramid
+def task10(height):
+    for i in range(height, 0, -1):
+        for j in range(0, height - i):
+            print(" ", end = "")
+        for k in range(0, i):
+            print("*", end = " ")
+        print()
+        
+    
+        
         
