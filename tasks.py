@@ -106,7 +106,7 @@ def task14(height):
             print(j, end = " ")
         print()
 
-# pyramid of numbers
+# pyramid of numbers 5
 def task15(height):
     for i in range(height, 0, -1):
         for j in range(1, i):
@@ -114,5 +114,49 @@ def task15(height):
         for j in range(0, height - i + 1):
             print(i, end = " ")
         print()
+        
+# pyramid of numbers 6
+def task16(height):
+    for i in range(1, height + 1):
+        for j in range(1, i):
+            print(end = " ")
+        for j in range(1, height - i + 2):
+            print(j, end = " ")
+        print()
 
+# succession 1
+def task17(num):
+    for i in range(0, num):
+        if i % 2 == 0:
+            print("*", end = " ")
+        else:
+            print("#", end = " ")
+
+# succession 2           
+def task18(num):
+    for i in range(1, num + 1):
+        if i % 3 == 1:
+            print("*", end = " ")
+        elif i % 3 == 2:
+            print("#", end = " ")
+        else:
+            print("@", end = " ")
+
+# succession 3
+def task19(num):
+    for i in range(1, num + 1):
+        if i % 2 != 0:
+            print(i, end = " ")
+        else:
+            print("$", end = " ")
+   
+# succession 4            
+def task20(num):
+    for i in range(1, num + 1):
+        if i % 2 == 1:
+            print("*", end = " ")
+        else:
+            print(i ** 2, end = " ")
+
+task20(10)
             
