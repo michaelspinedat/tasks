@@ -158,5 +158,54 @@ def task20(num):
         else:
             print(i ** 2, end = " ")
 
-task20(10)
+# triangle of numbers 4
+def task21(height):
+    for i in range(1, height + 1):
+        for j in range(1, i + 1):
+            print(j % 2, end = " ")
+        print()
+        
+# square of numbers
+def task22(side):
+    for i in range(1, side + 1):
+        for j in range(1, side + 1):
+            if i == j:
+                print(i, end = " ")
+            else:
+                print("0", end = " ")
+        print()
+        
+# triangle of symbols 1
+def task23(height):  
+    for i in range(1, height + 1):
+        for j in range(1, i + 1):
+            if i % 2 == 1:
+                print("*", end = " ")
+            else:
+                print("#", end = " ")
+        print()
+
+# triangle of symbols 2
+def task24(height):
+    for i in range(1, height + 1):
+        for j in range(1, i + 1):
+            if j % 3 == 1:
+                print("*", end = " ")
+            elif j % 3 == 2:
+                print("#", end = " ")
+            else:
+                print("@", end = " ")
+        print()
+
+# pyramid of numbers and symbols
+def task25(height):
+    for i in range(1, height + 1):
+        for j in range(0, height - i):
+            print(end = " ")
+        for j in range(1, i + 1):
+            if i % 2 == 1:
+                print("*", end = " ")
+            else:
+                print(j, end = " ")            
+        print()
             
