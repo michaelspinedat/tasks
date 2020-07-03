@@ -244,6 +244,23 @@ def task28(num):
             print(j, end = " ")
         print()
         
-
-    
+# pyramid of symbols
+def task29(height):
+    for i in range(1, height + 1):
+        for j in range(0, (2*height - 2 - 2*(i - 1))):
+            print(end = " ")
+        for j in range(0, (i - 1) * 2 + 1):
+            print("*", end = " ")
+        print()
+            
+# triangle of numbers 5
+def task30(height):
+    for i in range(1, height + 1):
+        for j in range(1, i + 1):
+            print(j, end = "")
+        for j in range(i - 1, 0, -1):
+            print(j, end = "")
+        print()
+        
+task30(5)
             
