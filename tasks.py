@@ -165,7 +165,7 @@ def task21(height):
             print(j % 2, end = " ")
         print()
         
-# square of numbers
+# square of numbers 1
 def task22(side):
     for i in range(1, side + 1):
         for j in range(1, side + 1):
@@ -208,4 +208,42 @@ def task25(height):
             else:
                 print(j, end = " ")            
         print()
+
+# square of numbers 2
+def task26(side):
+    for i in range(1, side + 1):
+        for j in range(i, side):
+            print("1", end = " ")
+        for j in range(1, i + 1):
+            print(i, end = " ")
+        print()
+        
+# skate ramp
+def task27(num):
+    for i in range(num, 0, -1):
+        for j in range(i, 0, -1):
+            print(j, end = " ")
+        print()
+    for i in range(1, num + 1):
+        for j in range(1, i + 1):
+            print(j, end = " ")
+        print()
+
+# hourglass
+def task28(num):
+    for i in range(1, num + 1):
+        for j in range(1, i):
+            print(end = " ")
+        for j in range(i, num + 1):
+            print(j, end = " ")
+        print()
+    for i in range(num, 0, -1):
+        for j in range(1, i):
+            print(end = " ")
+        for j in range(i, num + 1):
+            print(j, end = " ")
+        print()
+        
+
+    
             
