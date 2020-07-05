@@ -115,7 +115,7 @@ def task15(height):
             print(i, end = " ")
         print()
         
-# pyramid of numbers 6
+# pyramid of numbers 1
 def task16(height):
     for i in range(1, height + 1):
         for j in range(1, i):
@@ -158,7 +158,7 @@ def task20(num):
         else:
             print(i ** 2, end = " ")
 
-# triangle of numbers 4
+# triangle of numbers 5
 def task21(height):
     for i in range(1, height + 1):
         for j in range(1, i + 1):
@@ -244,7 +244,7 @@ def task28(num):
             print(j, end = " ")
         print()
         
-# pyramid of symbols
+# pyramid of symbols 1
 def task29(height):
     for i in range(1, height + 1):
         for j in range(0, (2*height - 2 - 2*(i - 1))):
@@ -253,7 +253,7 @@ def task29(height):
             print("*", end = " ")
         print()
             
-# triangle of numbers 5
+# stairs 1
 def task30(height):
     for i in range(1, height + 1):
         for j in range(1, i + 1):
@@ -262,5 +262,37 @@ def task30(height):
             print(j, end = "")
         print()
         
-task30(5)
-            
+# stairs 2
+def task31(height):
+    for i in range(1, height + 1):
+        for j in range(i, height + 1):
+            print(j, end = "")
+        for j in range(height - 1, i - 1, -1):
+            print(j, end = "")
+        print()
+
+# pyramid of symbols 2
+def task32(height):
+    for i in range(1, height + 1):
+        for j in range(0, i):
+            print("*", end = "")
+        print()
+    for i in range(height - 1, 0, -1):
+        for j in range(0, i):
+            print("*", end = "")
+        print()        
+        
+# succession 5
+def task33(num):        
+    for i in range(-num, num + 1):
+        print(i, end = " ")
+
+# succession 6
+def task34(num):
+    for i in range(-num, num + 1):
+        print(abs(i), end = " ")
+        
+# succession 7
+def task35(num):
+    for i in range(-num + 1, num):
+        print(num - abs(i), end = " ")    
