@@ -296,3 +296,42 @@ def task34(num):
 def task35(num):
     for i in range(-num + 1, num):
         print(num - abs(i), end = " ")    
+
+# succession 8
+def task36(num):
+    for i in range(-num + 1, num):
+        n = num - abs(i)
+        if n % 2 == 1:
+            print(n, end = " ")
+        else:
+            print("@", end = " ")
+
+# succession 8
+def task37(num):
+    for i in range(-num + 1, num):
+        if i < 0:
+            print( (2*abs(i) + 1)*2, end = " ")
+        elif i == 0:
+            print(i, end = " ")
+        else:
+            print((2*i + 1), end = " ")
+
+# succession 9
+def task38(num):
+    for i in range(1, num + 1):
+        print(chr(i + 64), end = " ")
+        
+# succession 10
+def task39(num):
+    for i in range(num, 0, -1):
+        print(chr(i + 64), end = " ")
+
+# succession 11
+def task40(num):
+    for i in range(1, num + 1):
+        if i % 2 == 1:
+            print(chr(i + 64), end = " ")
+        else:
+            print(chr(i + 64).lower(), end = " ")
+
+                
