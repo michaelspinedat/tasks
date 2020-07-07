@@ -106,7 +106,7 @@ def task14(height):
             print(j, end = " ")
         print()
 
-# pyramid of numbers 5
+# pyramid of numbers 1
 def task15(height):
     for i in range(height, 0, -1):
         for j in range(1, i):
@@ -115,7 +115,7 @@ def task15(height):
             print(i, end = " ")
         print()
         
-# pyramid of numbers 1
+# pyramid of numbers 2
 def task16(height):
     for i in range(1, height + 1):
         for j in range(1, i):
@@ -333,5 +333,50 @@ def task40(num):
             print(chr(i + 64), end = " ")
         else:
             print(chr(i + 64).lower(), end = " ")
+            
+# pyramid of numbers 3
+def task41(height):
+    for i in range(-height + 1, height):
+        n = height - abs(i)
+        for j in range(1, n + 1):
+            print(n, end = "")
+        print()
+        
+# pyramid of numbers 4
+def task42(height):
+    for i in range(-height + 1, height):
+        n = height - abs(i)        
+        for j in range(-n + 1, n):
+            n = height - abs(j)
+            print(n, end = "")
+        print()
+      
+# pyramid of numbers 5
+def task43(height):
+    for i in range(-height + 1, height):
+        n = height - abs(i)
+        for j in range(1, n + 1):
+            print(j, end = "")
+        print()
 
-                
+# diamond of numbers
+def task44(diag):
+    for i in range(1, diag * 2):
+        n = abs(diag - i)
+        for j in range(0, n):
+            print(end = " ")
+        for j in range(1, diag - n + 1):
+            print(j, end = " ")
+        print()
+        
+# pyramid of numbers 6
+def task45(height):
+    for i in range(1, height + 1):        
+        for j in range(i, height):
+            print(end = " ")
+        for j in range(-i + 1, i):
+            print(i - abs(j), end = "")
+        print()
+        
+task42(4)        
+    
